@@ -1,34 +1,41 @@
-/* RESET DE CONFIGURAÇÔES GERAIS PARA NAVEGADORES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-    color: blanchedalmond;
-    font-size: 100px;
-    margin: 20px;
-}
-
 body {
-    font-family:'Courier New', Courier, monospace;
+     font-family:'Courier New', Courier, monospace;
     background-color: black;
     color: aliceblue;
-    background-image: url(assets/sla.jpg);
+    background-image: url(assets/aiuafjqiwfqe1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
+h3 {
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 50px;
+    margin: 20px;
+} 
+
+ol {
+    font-size: 20px;
+    margin: 20px;
+    margin: 20px;text-align: center;
+    
+
+}
 
 button {
     display: block;
     text-align: center;
-    text-decoration: none;
+    text-decoration: 20px;
     margin: 20px auto;
+    color: blue;
     font-size: 30px;
     height: auto;
-    
 }
+
