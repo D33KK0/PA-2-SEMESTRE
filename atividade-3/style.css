@@ -1,67 +1,87 @@
-/* 1. Configurações de Reset e Fundo */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
+/* Estiliza o fundo da página com um tom acinzentado bem moderno */
 body {
-    background: linear-gradient(135deg, #0047bb 0%, #00a859 100%);
-    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(assets/titulo\ de\ eleitor.png);
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    height: 100vh;
+    margin: 0;
 }
 
-/* 2. Logo e Container */
-img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    margin-bottom: -40px;
-    z-index: 10;
+/* O cartão principal da nossa aplicação */
+.calculadora {
+    background-color: #ffffff6e;
+    padding: 30px;
+    border-radius: 12px; /* Deixei os cantos um pouco mais redondos */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra um pouco mais suave e espalhada */
+    width: 320px;
 }
 
-.conteiner {
-    background: white;
-    padding: 60px 30px 30px 30px;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-    width: 100%;
-    max-width: 380px;
+/* Título */
+h2 {
     text-align: center;
-}
-
-.logo h1 {
-    color: #0047bb;
-    margin-bottom: 10px;
-}
-
-/* 3. Estilização do Input */
-.input-group {
+    color: #2c3e50; /* Um azul bem escuro, quase cinza */
+    margin-top: 0;
     margin-bottom: 20px;
-    text-align: left;
 }
 
-input {
+/* Texto acima do campo de digitar */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* A caixa onde o usuário digita a idade */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e04f;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Prepara para a animação de foco */
+}
+
+/* NOVIDADE: Muda a cor da borda quando o usuário clica para digitar */
+input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Cria um "brilho" azul em volta */
+}
+
+/* O botão de verificar */
+button {
     width: 100%;
     padding: 12px;
-    border: 2px solid #eee;
+    background-color: #2980b9; /* Um azul vibrante e sério */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cor do botão ao passar o mouse */
+button:hover {
+    background-color: #1c5980; /* Fica mais escuro */
+}
+
+/* A caixa onde aparece se pode ou não votar */
+#resultado {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    padding: 15px;
     border-radius: 8px;
-    outline: none;
-    transition: 0.3s;
+    border: 1px dashed #bdc3c7;
+    color: #2c3e50;
 }
-
-input:focus {
-    border-color: #00a859;
-}
-
-/* 4. BOTÃO ANIMADO (O SEGREDO) */
-#VerificarIdade {
-    position:

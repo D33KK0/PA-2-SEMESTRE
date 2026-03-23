@@ -28,7 +28,6 @@ botaoGerar.addEventListener("Click", gerarTabuada);
 // Adicionar o efeito interativo do mouse no fundo
 document.body.addEventListener("mousemove", e => {} 
     // Calcular a posição do mouse em porcentagem da tela
-    const x = 
 
     
 
