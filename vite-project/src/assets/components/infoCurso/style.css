@@ -1,0 +1,65 @@
+/* Importando uma fonte de estilo gótico/clássico do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    /* Fundo abissal */
+    background-color: #070707; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-oculto {
+    /* Textura e profundidade */
+    background: linear-gradient(135deg, #140000 0%, #000000 100%);
+    border: 1px solid #3a0000;
+    border-top: 3px solid #8b0000; /* Detalhe em vermelho sangue no topo */
+    padding: 30px;
+    width: 350px;
+    
+    /* Brilho esfumaçado e infernal */
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.8);
+    
+    /* Tipografia principal */
+    font-family: 'Crimson Text', 'Times New Roman', serif;
+    color: #d6c5b3; /* Cor de osso envelhecido / pergaminho */
+}
+
+.container-oculto h2 {
+    font-family: 'Cinzel', serif; /* Fonte mais imponente para o título */
+    color: #ff1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 1px solid #4a0000;
+    padding-bottom: 15px;
+    margin-top: 0;
+    
+    /* Sombra vermelha no texto */
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.container-oculto p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+    border-left: 2px solid #8b0000;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse (hover) */
+.container-oculto p:hover {
+    background-color: rgba(139, 0, 0, 0.1);
+    transform: translateX(5px);
+    border-left-color: #ff1a1a;
+    color: #ffffff;
+}
+
+.container-oculto .label {
+    color: #8b0000; /* Destaque nas categorias */
+    font-weight: bold;
+    letter-spacing: 1px;
+}

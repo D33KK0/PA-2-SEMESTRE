@@ -1,0 +1,55 @@
+/* Importando a fonte pixelada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.info-aluno {
+    background-color: #c6c6c6; /* Cor cinza clássica do menu */
+    font-family: 'VT323', monospace;
+    color: #3f3f3f;
+    padding: 20px;
+    width: fit-content;
+    min-width: 300px;
+    
+    /* Efeito de borda chanfrada do Minecraft */
+    border: 4px solid #000;
+    box-shadow: 
+        inset -4px -4px 0px #555555, 
+        inset 4px 4px 0px #ffffff;
+    
+    image-rendering: pixelated;
+    position: relative;
+    margin: 20px;
+}
+
+.info-aluno h2 {
+    color: #ffff55; /* Cor de destaque (amarelo ouro) */
+    text-shadow: 2px 2px 0px #3f3f00;
+    margin-top: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.info-aluno p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #555555;
+}
+
+/* Efeito de hover para parecer que estamos selecionando um item */
+.info-aluno:hover {
+    outline: 4px solid #ffffff;
+    cursor: url('https://cur.cursors-4u.net/games/gam-4/gam385.cur'), auto;
+}
+
+/* Adicionando um "título" flutuante estilo conquista (opcional) */
+.info-aluno::before {
+    content: "Player Stats";
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 1rem;
+}
