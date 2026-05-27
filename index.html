@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de idades</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="calculadora">
+        <h2>Idade Para Votação</h2>
+        
+        <label for="numero1">Digite sua idade:</label>
+        <input type="number" id="numero1">
+
+        <button id="btnCalcular">Verificar Idade</button>
+
+        <div id="resultado">
+            <p>Insira sua idade acima.</p>
+        </div>
+    </div>
+
+    <script>
+        const botao = document.getElementById("btnCalcular");
+        botao.addEventListener("click", calcularIdade);
+
+        function calcularIdade() {
+            let idade = parseFloat(document.getElementById("numero1").value);
+            let resultado = document.getElementById("resultado");
+
+            if (isNaN(idade)) {
+                resultado.innerHTML = "<p style='color: red; font-size: 14px;'>Por favor, insira sua idade.</p>";
+                return;
+            }
+
+            let Idade = (idade);
+            let status;
+            let corStatus;
+
+            if (idade < 16) {
+                status = "Você não pode votar.";
+            }
+
+            if (idade >= 16 && idade <= 17){
+                status = "Seu voto é opcional.";
+            }
+
+            if(idade >= 18){
+                status = "Seu Voto é obrigatório.";
+            }
+
+            if(idade >= 65){
+                status = "Seu Voto não é obrigátorio.";
+            }
+
+            resultado.innerHTML = `
+                <p style="margin: 5px 0;">Idade: <strong>${idade.toFixed(1)}</strong></p>
+                <p style="margin: 5px 0;">Status: <span style="color: ${corStatus}; font-weight: bold;">${status}</span></p>
+            `;
+        }
+    </script>
+</body>
+</html>

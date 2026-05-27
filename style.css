@@ -1,0 +1,87 @@
+/* Estiliza o fundo da página com um tom acinzentado bem moderno */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(assets/titulo\ de\ eleitor.png);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* O cartão principal da nossa aplicação */
+.calculadora {
+    background-color: #ffffff6e;
+    padding: 30px;
+    border-radius: 12px; /* Deixei os cantos um pouco mais redondos */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra um pouco mais suave e espalhada */
+    width: 320px;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #2c3e50; /* Um azul bem escuro, quase cinza */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Texto acima do campo de digitar */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* A caixa onde o usuário digita a idade */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e04f;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Prepara para a animação de foco */
+}
+
+/* NOVIDADE: Muda a cor da borda quando o usuário clica para digitar */
+input[type="number"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Cria um "brilho" azul em volta */
+}
+
+/* O botão de verificar */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9; /* Um azul vibrante e sério */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cor do botão ao passar o mouse */
+button:hover {
+    background-color: #1c5980; /* Fica mais escuro */
+}
+
+/* A caixa onde aparece se pode ou não votar */
+#resultado {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #bdc3c7;
+    color: #2c3e50;
+}
